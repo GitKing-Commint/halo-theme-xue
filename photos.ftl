@@ -18,6 +18,7 @@
 <#--        </h2>-->
 <#--      </div>-->
 <#--    </header>-->
+    
     <header id="hero" class="bg-gray-900 table fade-down relative w-full opacity-95 z-10 <#if settings.enabled_index_cover_height!true>h-1/2 sm:h-1/2 md:h-screen full-screen<#else> h-1/2</#if>">
         <#if settings.photos_patternimg?? && settings.photos_patternimg!=''>
           <div class="cover-bg bottom-0 left-0 right-0 top-0 opacity-30 absolute">
