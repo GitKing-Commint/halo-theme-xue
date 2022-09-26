@@ -10,18 +10,24 @@
             </div>
           </div>
         </#if>
-        <figure class="flex items-center justify-center h-56 cursor-pointer">
+        <figure class="flex items-center justify-center h-56 cursor-pointer indexInfo">
           <a href="${post.fullPath!}" class="w-full">
             <#if post.thumbnail?? && post.thumbnail!=''>
               <img class="lazyload object-cover w-full h-56 no-zoom"
                    src="${theme_base!}/source/images/loading.gif"
                    data-src="${post.thumbnail!''}" alt="${post.title}"/>
+              <div class="item-desc">
+                <p>${post.summary!}</p>
+              </div>
             <#elseif settings.card_random_cover_list?? && settings.card_random_cover_list != ''>
               <img class="object-cover w-full h-56 img-random no-zoom"
                    index="${post_index}"
                    src="${theme_base!}/source/images/loading.gif"
                    alt="${post.title!}"
               />
+              <div class="item-desc">
+                <p>${post.summary!}</p>
+              </div>
             <#else>
               <span class="full-image placeholder-bg w-full h-56" role="img" aria-label=""></span>
             </#if>

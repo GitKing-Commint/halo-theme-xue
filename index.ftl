@@ -2,7 +2,8 @@
 <@layout title="${options.blog_title!}">
   <main class="mx-auto" id="container">
     <header id="hero" class="bg-gray-900 table fade-down relative w-full opacity-95 z-10 <#if settings.enabled_index_cover_height!true>h-1/2 sm:h-1/2 md:h-screen full-screen<#else> h-1/2</#if>">
-      <#if settings.home_cover?? && settings.home_cover!=''>
+      <meta name="baidu-site-verification" content="code-LuhiZgQ32I" />
+        <#if settings.home_cover?? && settings.home_cover!=''>
         <div class="cover-bg bottom-0 left-0 right-0 top-0 opacity-30 absolute">
           <img src="${settings.home_cover!}"
                alt="${settings.home_title!options.blog_title!}"
