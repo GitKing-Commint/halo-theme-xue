@@ -10,7 +10,7 @@
             </div>
           </div>
         </#if>
-        <figure class="flex items-center justify-center h-56 cursor-pointer indexInfo">
+        <figure class="flex items-center justify-center h-56 cursor-pointer index-info">
           <a href="${post.fullPath!}" class="w-full">
             <#if post.thumbnail?? && post.thumbnail!=''>
               <img class="lazyload object-cover w-full h-56 no-zoom"
